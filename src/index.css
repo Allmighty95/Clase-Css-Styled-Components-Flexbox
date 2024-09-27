@@ -1,13 +1,70 @@
+/* src/index.css */
+
+/* Estilos generales */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #f4f4f4; /* Color de fondo suave */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: #333; /* Color de fondo de la barra de navegación */
+  color: white; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
 }
+
+/* Estilo de los enlaces de navegación */
+.navbar a {
+  color: white; /* Color del texto de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  margin: 0 15px; /* Espaciado entre enlaces */
+}
+
+/* Cambiar color en hover */
+.navbar a:hover {
+  color: #ffcc00; /* Color amarillo en hover */
+}
+
+/* Estilos para las páginas */
+.container {
+  max-width: 800px; /* Ancho máximo de la página */
+  margin: 20px auto; /* Centrar la página */
+  padding: 20px; /* Espaciado interno */
+  background-color: white; /* Color de fondo blanco para las secciones */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para formularios */
+form {
+  display: flex; /* Usar flexbox para alinear elementos */
+  flex-direction: column; /* Dirección vertical */
+}
+
+input {
+  margin-bottom: 10px; /* Espacio entre los campos del formulario */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+button {
+  padding: 10px; /* Espaciado interno */
+  background-color: #28a745; /* Color verde */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a mano */
+}
+
+/* Cambiar color en hover del botón */
+button:hover {
+  background-color: #218838; /* Color más oscuro en hover */
+}
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
